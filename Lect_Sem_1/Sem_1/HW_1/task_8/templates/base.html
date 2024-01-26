@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Сайт твой
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <header class="header">
+        <h1>Super-Duper-Company</h1>
+        <div class="menu">
+            <!-- <a href="main.html" class="menu-item">Главная</a> -->
+            <a href="/about/" class="menu-item">О нас</a>
+            <a href="/contacts/" class="menu-item">Контакты</a>
+        </div>
+    </header>
+
+    {% block content %}
+        Заполнить надо тебе строки эти
+    {% endblock %}
+        
+    <footer class="footer">
+        <hr>
+        <p>All rights reserved ©</p>
+    </footer>
+</body>
+</html>
