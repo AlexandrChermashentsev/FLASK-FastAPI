@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ form_input_number }}
+{% endblock %}
+
+{% block content %}
+    <form action="{{ url_for('number_post') }}" method="post" enctype="multipart/form-data">
+        <input type="text" name="number" placeholder="Enter the number">
+        <input type="submit" value="SEND">
+      </form>
+{% endblock %}

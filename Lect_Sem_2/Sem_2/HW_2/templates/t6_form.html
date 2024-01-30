@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ form_input_user }}
+{% endblock %}
+
+{% block content %}
+    <form action="{{ url_for('user_post') }}" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Your name">
+        <input type="number" name="age" placeholder="Your age">
+        <input type="submit" value="SEND">
+      </form>
+{% endblock %}
